@@ -75,14 +75,3 @@ create database cines;
         FOREIGN KEY (idTanda) REFERENCES Tanda (idTanda)
         ON DELETE NO ACTION ON UPDATE CASCADE
     );
-
-
-   
-       
-
-
-
-        
-   
-
-
