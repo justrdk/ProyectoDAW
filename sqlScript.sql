@@ -12,6 +12,7 @@ create database cines;
 
     CREATE TABLE Cine(
         idCine INT NOT NULL AUTO_INCREMENT,
+        nombre VARCHAR(20) NOT NULL,
         ciudad VARCHAR(50) NOT NULL,
         vision VARCHAR(150) NOT NULL,
         mision VARCHAR(150) NOT NULL,
