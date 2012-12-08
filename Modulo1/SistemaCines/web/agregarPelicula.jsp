@@ -16,7 +16,7 @@
     <body>
         <%@include file="commonMenu.jsp" %>
         <div id="wrapper">
-            <form action="Controladoras/controladora_agregarCine.jsp" method="POST">
+            <form action="Controladoras/controladora_agregarPelicula.jsp" method="POST">
                 <h2>Datos Pelicula Nueva</h2><br/>
                 <fieldset id="user-details">
                     <label>Nombre: </label>
