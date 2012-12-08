@@ -3,7 +3,7 @@ create database cines;
 
     CREATE TABLE Cuenta(
         cuenta VARCHAR(20) NOT NULL,
-        password BLOB NOT NULL,
+        password VARCHAR(32) NOT NULL,
         nombre VARCHAR(20) NOT NULL,
         edad INT NOT NULL,
         noIdentidad VARCHAR(13) NOT NULL,
