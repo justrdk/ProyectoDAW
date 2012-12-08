@@ -36,7 +36,7 @@ create database cines;
         idPelicula INT NOT NULL AUTO_INCREMENT,
         nombre VARCHAR(50) NOT NULL,
         duracion VARCHAR(30) NOT NULL,
-        rating INT NOT NULL,
+        rating VARCHAR (50) NOT NULL,
         sinopsis VARCHAR(100) NOT NULL,
         director VARCHAR(40) NOT NULL,
         trailer VARCHAR(80) NOT NULL,
