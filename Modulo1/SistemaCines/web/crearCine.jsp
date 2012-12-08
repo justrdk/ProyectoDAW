@@ -24,8 +24,6 @@
                     <input type="text" name="nombreCine" />
                     <label>Ciudad: </label>
                     <input type="text" name="ciudadCine" />
-                    <label>Cantidad de Salas </label>
-                    <input type="text" name="cantidadSalasCine" />
                     <label>Logo: </label>
                     <input type="text" name="logoCine" />
                     <h3> Ubicacion en Coordenadas </h3>

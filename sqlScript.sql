@@ -16,7 +16,6 @@ create database cines;
         ciudad VARCHAR(50) NOT NULL,
         vision VARCHAR(150) NOT NULL,
         mision VARCHAR(150) NOT NULL,
-        numSalas INT NOT NULL,
         logo VARCHAR (50) NOT NULL,
         latitud VARCHAR(100) NOT NULL,
         longitud VARCHAR(100) NOT NULL,
