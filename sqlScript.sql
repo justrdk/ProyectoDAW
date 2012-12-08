@@ -91,3 +91,15 @@ create database cines;
     INSERT INTO PELICULA VALUES(default,'Prometheus','125 minutos','R','Pelicula de aliens.','Ridley Scott','http://www.youtube.com/watch?v=tnV6wM-vd9s',2011,'Accion,Suspenso','Ingles','Subtitulada,Normal','http://ia.media-imdb.com/images/M/MV5BMTc0NTY1NjcyMV5BMl5BanBnXkFtZTcwNjk2MjAyMQ@@._V1._SX326_SY475_.jpg');
 
     INSERT INTO PELICULA VALUES(default,'Black Swan','125 minutos','R','Pelicula de una bailarina de ballet.','Darren Aronofsky','http://www.youtube.com/watch?v=tnV6wM-vd9s',2010,'Suspenso,Drama','Ingles','Subtitulada,Normal','http://ia.media-imdb.com/images/M/MV5BMTc0NTY1NjcyMV5BMl5BanBnXkFtZTcwNjk2MjAyMQ@@._V1._SX326_SY475_.jpg');
+
+    INSERT INTO SALA VALUES(default,1,'Regis',50);
+    INSERT INTO SALA VALUES(default,1,'Aries',50);
+    INSERT INTO SALA VALUES(default,2,'Sala1',50);
+    INSERT INTO SALA VALUES(default,2,'Sala2',50);
+    INSERT INTO SALA VALUES(default,1,'Sagitario',50);
+    INSERT INTO SALA VALUES(default,1,'Acuario',50);
+    INSERT INTO SALA VALUES(default,2,'Sala3',50);
+
+    INSERT INTO TANDA VALUES(default,'20121208','2012/12/08 13:00','2012/12/08 14:00',1,1,'prueba xml');
+    INSERT INTO TANDA VALUES(default,'20121209','2012/12/09 14:00','2012/12/08 15:00',2,2,'prueba xml2');
+    INSERT INTO TANDA VALUES(default,'20121210','2012/12/09 15:00','2012/12/08 16:00',4,5,'prueba xml3');

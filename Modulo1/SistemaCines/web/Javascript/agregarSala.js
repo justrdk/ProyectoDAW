@@ -13,7 +13,6 @@ function getCines(){
         },  
         success: function (data)
         {
-            console.log(data);
             if(data.trim() != "none")
             { 
                 var pz = data.trim().split('#');
@@ -51,7 +50,6 @@ function guardarSala()
             },  
             success: function (data)
             {
-                console.log(data.trim());
                 if(data.trim() == "true")
                 {
                      alert('Sala creada exitosamente!');   
