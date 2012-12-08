@@ -1,0 +1,70 @@
+/* 
+    Document   : LoginForm
+    Created on : Dec 7, 2012, 7:55:54 PM
+    Author     : Osman
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*center div*/
+#wrapper{
+    bottom: 50%;
+    right: 50%;
+    position:absolute;
+}
+#wrapper-inside{
+    left: 50%;
+    position: relative;
+    top: 50%;
+}
+
+/* styling para login for */
+form{
+    width: 250px;
+    padding:20px;
+    border:1px solid #270644;
+
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+
+    background:  -moz-linear-gradient(19% 75% 90deg,#4E0085, #963AD6);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#963AD6), to(#4E0085));
+
+    -moz-box-shadow:0px -5px 300px #270644;
+    -webkit-box-shadow:0px -5px 300px #270644;
+}
+
+input {
+    width: 230px;
+    background: #8a33c6;
+    padding: 6px;
+    margin-bottom: 10px;
+    border-top: 1px solid #ad64e0;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+
+    -webkit-transition-property: -webkit-box-shadow, background;
+    -webkit-transition-duration: 0.25s;
+
+    -moz-box-shadow: 0px 0px 2px #000;
+    -webkit-box-shadow: 0px 0px 2px #000;
+}
+
+input:hover {
+    -webkit-box-shadow: 0px 0px 4px #000;
+    background: #9d39e1;
+}
+
+input.submit {
+    width: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: #000 1px 1px;
+    border-top: 1px solid #ad64e0;
+    margin-top: 10px;
+
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#963AD6), to(#781bb9));   
+    background:  -moz-linear-gradient(19% 75% 90deg,#781bb9, #963AD6);   
+}
+

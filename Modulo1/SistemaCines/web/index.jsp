@@ -9,9 +9,20 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Administración Cines</title>
+        <LINK href="CSS/LoginStyling.css" rel="stylesheet" type="text/css">   
+        <title>Login</title>
     </head>
     <body>
-       
+        <div id="wrapper">
+            <div id="wrapper-inside">
+                <form action="Controladoras/controladora_Login.jsp" method="POST">
+                    <label>Usuario: </label>
+                    <input type ="text" name ="username"/>
+                    <label>Contraseña: </label>
+                    <input type ="password" name ="password"/>
+                    <input type="submit" value="Submit" name="submit" class="submit" />
+                </form>
+            </div>
+        </div>
     </body>
 </html>

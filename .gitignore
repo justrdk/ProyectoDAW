@@ -4,3 +4,5 @@
 *.jar
 *.war
 *.ear
+/Modulo1/SistemaCines/nbproject/private/
+/Modulo1/SistemaCines/build/
