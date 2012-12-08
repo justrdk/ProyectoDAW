@@ -17,8 +17,8 @@ Pagina Estatica para incluir menu en todas las demás paginas que tengan este mi
             <ul>
                 <li class='has-sub '><a href='index.html'><span>Cines</span></a>
                     <ul>
-                        <li><a href='#'><span>Crear Cine</span></a></li>
-                        <li><a href='#'><span>Editar Cine</span></a></li>
+                        <li><a href='crearCine.jsp'><span>Crear Cine</span></a></li>
+                        <li><a href='editarCine.jsp'><span>Editar Cine</span></a></li>
                     </ul>
                 </li>
                 <li class='has-sub '><a href='#'><span>Salas</span></a>
@@ -29,7 +29,7 @@ Pagina Estatica para incluir menu en todas las demás paginas que tengan este mi
                 </li>
                 <li class='has-sub '><a href='#'><span>Películas</span></a>
                     <ul>
-                        <li><a href='#'><span>Agregar Tanda</span></a></li>
+                        <li><a href='agregarPelicula.jsp'><span>Agregar Película</span></a></li>
                     </ul>
                 </li>
                 <li class='has-sub '><a href='#'><span>Tandas</span></a>

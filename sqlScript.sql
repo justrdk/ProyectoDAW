@@ -36,16 +36,16 @@ create database cines;
     CREATE TABLE Pelicula(
         idPelicula INT NOT NULL AUTO_INCREMENT,
         nombre VARCHAR(50) NOT NULL,
-        duracion VARCHAR(10) NOT NULL,
+        duracion VARCHAR(30) NOT NULL,
         rating INT NOT NULL,
         sinopsis VARCHAR(100) NOT NULL,
-        director VARCHAR(20) NOT NULL,
-        trailer VARCHAR(50) NOT NULL,
+        director VARCHAR(40) NOT NULL,
+        trailer VARCHAR(80) NOT NULL,
         year INT NOT NULL,
-        genero VARCHAR(20) NOT NULL,
-        idioma VARCHAR(20) NOT NULL,
-        formato VARCHAR(15) NOT NULL,
-        imagenDescriptiva VARCHAR(20) NOT NULL,
+        genero VARCHAR(30) NOT NULL,
+        idioma VARCHAR(30) NOT NULL,
+        formato VARCHAR(40) NOT NULL,
+        imagenDescriptiva VARCHAR(100) NOT NULL,
         PRIMARY KEY (idPelicula)
     );
 
@@ -76,3 +76,6 @@ create database cines;
         FOREIGN KEY (idTanda) REFERENCES Tanda (idTanda)
         ON DELETE NO ACTION ON UPDATE CASCADE
     );
+
+    INSERT INTO CUENTA VALUES ('admin',MD5('admin'),'osman',20,'0801199207544');
+    
