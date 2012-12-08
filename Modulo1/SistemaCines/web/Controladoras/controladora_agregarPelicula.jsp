@@ -3,7 +3,7 @@
     try {
         String nombrePelicula = request.getParameter("nombrePelicula").trim();
         String duracionPelicula = request.getParameter("duracionPelicula").trim();
-        int ratingPelicula = Integer.parseInt(request.getParameter("ratingPelicula").trim());
+        String ratingPelicula = request.getParameter("ratings").trim();
         String directorPelicula = request.getParameter("directorPelicula").trim();
         String trailerPelicula = request.getParameter("trailerPelicula").trim();
         int yearPelicula = Integer.parseInt(request.getParameter("yearPelicula").trim());
@@ -15,7 +15,7 @@
 
 
         Connection con = null;
-        String dbuser = "dba";
+        String dbuser = "root";
         String dbpw = "admin";
         String url = "jdbc:mysql://localhost:3306/cines";
         Class.forName("com.mysql.jdbc.Driver").newInstance();
@@ -24,7 +24,7 @@
         PreparedStatement query = con.prepareStatement("insert into pelicula values(default,?,?,?,?,?,?,?,?,?,?,?)");
         query.setString(1, nombrePelicula);
         query.setString(2, duracionPelicula);
-        query.setInt(3, ratingPelicula);
+        query.setString(3, ratingPelicula);
         query.setString(4, sinopsisPelicula);
         query.setString(5, directorPelicula);
         query.setString(6, trailerPelicula);

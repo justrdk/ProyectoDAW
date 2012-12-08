@@ -10,7 +10,7 @@
         String misionCine = request.getParameter("misionCine").trim();
 
         Connection con = null;
-        String dbuser = "dba";
+        String dbuser = "root";
         String dbpw = "admin";
         String url = "jdbc:mysql://localhost:3306/cines";
         Class.forName("com.mysql.jdbc.Driver").newInstance();

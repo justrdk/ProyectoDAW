@@ -23,8 +23,14 @@
                     <input type="text" name="nombrePelicula" />
                     <label>Duracion </label>
                     <input type="text" name="duracionPelicula" />
-                    <label>Rating 1-5</label>
-                    <input type="text" name="ratingPelicula" />
+                    <label>Rating</label>
+                    <select name="ratings">
+                        <option value="G">G</option>
+                        <option value="PG">PG</option>
+                        <option value="PG-13">PG-13</option>
+                        <option value="R">R</option>
+                        <option value="NC-17">NC-17</option>
+                    </select>
                     <label>Director </label>
                     <input type="text" name="directorPelicula" />
                     <label>Trailer: </label>

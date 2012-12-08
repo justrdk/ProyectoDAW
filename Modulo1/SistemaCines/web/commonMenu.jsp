@@ -9,7 +9,20 @@ Pagina Estatica para incluir menu en todas las demás paginas que tengan este mi
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-       <link href="CSS/menu_assets/styles.css" rel="stylesheet" type="text/css">
+        <link href="CSS/menu_assets/styles.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript">
+            function getParameterByName(name)
+            {
+                name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+                var regexS = "[\\?&]" + name + "=([^&#]*)";
+                var regex = new RegExp(regexS);
+                var results = regex.exec(window.location.search);
+                if(results == null)
+                    return "";
+                else
+                    return decodeURIComponent(results[1].replace(/\+/g, " "));
+            }
+        </script>
         <title>Administracion Cines</title>
     </head>
     <body>
@@ -23,8 +36,7 @@ Pagina Estatica para incluir menu en todas las demás paginas que tengan este mi
                 </li>
                 <li class='has-sub '><a href='#'><span>Salas</span></a>
                     <ul>
-                        <li><a href='#'><span>Agregar Sala</span></a></li>
-                        <li><a href='#'><span>Reportes</span></a></li>
+                        <li><a href='agregarSala.jsp'><span>Agregar Sala</span></a></li>
                     </ul>
                 </li>
                 <li class='has-sub '><a href='#'><span>Películas</span></a>
@@ -35,6 +47,11 @@ Pagina Estatica para incluir menu en todas las demás paginas que tengan este mi
                 <li class='has-sub '><a href='#'><span>Tandas</span></a>
                     <ul>
                         <li><a href='#'><span>Agregar Tanda</span></a></li>
+                    </ul>
+                </li>
+                <li class='has-sub '><a href='#'><span>Precios</span></a>
+                    <ul>
+                        <li><a href='#'><span>Agregar Precio Entrada/Película</span></a></li>
                     </ul>
                 </li>
                 <li class='has-sub '><a href='#'><span>Reportes</span></a>
