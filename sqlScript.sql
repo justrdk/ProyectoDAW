@@ -77,8 +77,17 @@ create database cines;
         );
 
     INSERT INTO CUENTA VALUES ('admin',MD5('admin'),'osman',20,'0801199207544');
+
     INSERT INTO CINE VALUES (default,'Cinemark','Tegucigalpa','Para el 2020 Ser el cento de entrenimiento principal de latinoamerica','Ser el mejor cine en centroamerica','http://www.cinemarkca.com/imgs/themes/cinemark/logo-cinemark-blanco.png','14.090981078624113','-87.18333721160889');
+
     INSERT INTO CINE VALUES (default,'Cinepolis','Tegucigalpa','Para el 2014 Ser el cento de entrenimiento principal de latinoamerica','Ser el mejor cine en honduras','http://cinepolis.hn/imagenes_/png/logo-cinepolis.png','14.077015787291305','-87.2001600265503');
 
     INSERT INTO PELICULA VALUES(default,'Black Hawk Down','120 minutos','R','Pelicula de Guerra que toma lugar en Somalia,Africa.','Ridley Scott','http://www.youtube.com/watch?v=tnV6wM-vd9s',2001,'Accion','Ingles','Subtitulada,Normal','http://ia.media-imdb.com/images/M/MV5BMTc0NTY1NjcyMV5BMl5BanBnXkFtZTcwNjk2MjAyMQ@@._V1._SX326_SY475_.jpg');
-    
+
+    INSERT INTO PELICULA VALUES(default,'The Secret Window','144 minutos','PG-13','Pelicula de suspenso que los tendra intrigados todo el tiempo.','David Koepp','http://www.youtube.com/watch?v=tnV6wM-vd9s',2004,'Suspenso','Ingles','Subtitulada,Normal','http://ia.media-imdb.com/images/M/MV5BMTc0NTY1NjcyMV5BMl5BanBnXkFtZTcwNjk2MjAyMQ@@._V1._SX326_SY475_.jpg');
+
+    INSERT INTO PELICULA VALUES(default,'The Gladiator','110 minutos','R','Pelicula de un gladiador.','Ridley Scott','http://www.youtube.com/watch?v=tnV6wM-vd9s',1999,'Drama,Accion','Ingles','Subtitulada,Normal','http://ia.media-imdb.com/images/M/MV5BMTc0NTY1NjcyMV5BMl5BanBnXkFtZTcwNjk2MjAyMQ@@._V1._SX326_SY475_.jpg');
+
+    INSERT INTO PELICULA VALUES(default,'Prometheus','125 minutos','R','Pelicula de aliens.','Ridley Scott','http://www.youtube.com/watch?v=tnV6wM-vd9s',2011,'Accion,Suspenso','Ingles','Subtitulada,Normal','http://ia.media-imdb.com/images/M/MV5BMTc0NTY1NjcyMV5BMl5BanBnXkFtZTcwNjk2MjAyMQ@@._V1._SX326_SY475_.jpg');
+
+    INSERT INTO PELICULA VALUES(default,'Black Swan','125 minutos','R','Pelicula de una bailarina de ballet.','Darren Aronofsky','http://www.youtube.com/watch?v=tnV6wM-vd9s',2010,'Suspenso,Drama','Ingles','Subtitulada,Normal','http://ia.media-imdb.com/images/M/MV5BMTc0NTY1NjcyMV5BMl5BanBnXkFtZTcwNjk2MjAyMQ@@._V1._SX326_SY475_.jpg');
