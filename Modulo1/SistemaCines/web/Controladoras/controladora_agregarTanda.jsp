@@ -17,6 +17,31 @@
         Class.forName("com.mysql.jdbc.Driver").newInstance();
         con = DriverManager.getConnection(url, dbuser, dbpw);
         PreparedStatement query = null;
+        String xml = "<sala><fila Columna=\"A\"><silla  disponible = \"true\">"
+        + "</silla><silla disponible = \"true\"></silla><silla disponible = \"true\"></silla><silla disponible = \"true\">"
+        + "</silla><silla disponible = \"true\"></silla><silla disponible = \"true\"></silla>"
+        + "<silla disponible = \"true\"></silla><silla disponible = \"true\"></silla>"
+        + "<silla disponible = \"true\"></silla><silla disponible = \"true\"></silla></fila>"
+        + "<fila  Columna=\"B\"><silla  disponible = \"true\">"
+        + "</silla><silla disponible = \"true\"></silla><silla disponible = \"true\"></silla><silla disponible = \"true\">"
+        + "</silla><silla disponible = \"true\"></silla><silla disponible = \"true\"></silla>"
+        + "<silla disponible = \"true\"></silla><silla disponible = \"true\"></silla>"
+        + "<silla disponible = \"true\"></silla><silla disponible = \"true\"></silla></fila>"
+        + "<fila  Columna=\"C\"><silla  disponible = \"true\">"
+        + "</silla><silla disponible = \"true\"></silla><silla disponible = \"true\"></silla><silla disponible = \"true\">"
+        + "</silla><silla disponible = \"true\"></silla><silla disponible = \"true\"></silla>"
+        + "<silla disponible = \"true\"></silla><silla disponible = \"true\"></silla>"
+        + "<silla disponible = \"true\"></silla><silla disponible = \"true\"></silla></fila>"
+        + "<fila  Columna=\"D\"><silla  disponible = \"true\">"
+        + "</silla><silla disponible = \"true\"></silla><silla disponible = \"true\"></silla><silla disponible = \"true\">"
+        + "</silla><silla disponible = \"true\"></silla><silla disponible = \"true\"></silla>"
+        + "<silla disponible = \"true\"></silla><silla disponible = \"true\"></silla>"
+        + "<silla disponible = \"true\"></silla><silla disponible = \"true\"></silla></fila>"
+        + "<fila  Columna=\"E\"><silla  disponible = \"true\">"
+        + "</silla><silla disponible = \"true\"></silla><silla disponible = \"true\"></silla><silla disponible = \"true\">"
+        + "</silla><silla disponible = \"true\"></silla><silla disponible = \"true\"></silla>"
+        + "<silla disponible = \"true\"></silla><silla disponible = \"true\"></silla>"
+        + "<silla disponible = \"true\"></silla><silla disponible = \"true\"></silla></fila>";
 
         if (accion == 1) {
             query = con.prepareStatement("insert into tanda values (default,?,?,?,?,?,?)");
@@ -25,7 +50,7 @@
             query.setString(3,horaFinal);
             query.setInt(4, idSala);
             query.setInt(5, idPelicula);
-            query.setString(6,"asdasda");
+            query.setString(6,xml.trim());
 
             int row = query.executeUpdate();
             

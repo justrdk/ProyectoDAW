@@ -139,7 +139,7 @@ function guardarTanda()
             {
                 if(data.trim() == "true")
                 {
-                    alert('Tanda Ingresada exitosamente!');   
+                    alert('Tanda Ingresada exitosamente!');
                 }
             }
         });
