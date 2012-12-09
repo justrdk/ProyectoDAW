@@ -100,6 +100,6 @@ create database cines;
     INSERT INTO SALA VALUES(default,1,'Acuario',50);
     INSERT INTO SALA VALUES(default,2,'Sala3',50);
 
-    INSERT INTO TANDA VALUES(default,'20121208','2012/12/08 13:00','2012/12/08 14:00',1,1,'prueba xml');
-    INSERT INTO TANDA VALUES(default,'20121209','2012/12/09 14:00','2012/12/08 15:00',2,2,'prueba xml2');
-    INSERT INTO TANDA VALUES(default,'20121210','2012/12/09 15:00','2012/12/08 16:00',4,5,'prueba xml3');
+    INSERT INTO TANDA VALUES(default,'2012-12-08','2012/12/08 13:00','2012/12/08 14:00',1,1,'prueba xml');
+    INSERT INTO TANDA VALUES(default,'2012-12-09','2012/12/09 14:00','2012/12/08 15:00',2,2,'prueba xml2');
+    INSERT INTO TANDA VALUES(default,'2012-12-10','2012/12/09 15:00','2012/12/08 16:00',4,5,'prueba xml3');
