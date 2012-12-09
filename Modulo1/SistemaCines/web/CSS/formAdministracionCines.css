@@ -48,7 +48,7 @@ textarea {
     color:red;
     display:none;
 }
-form,#wrapper-sala,#wrapper-tanda,#wrapper-cine,#wrapper-pelicula,#wrapper-precio { 
+form,#wrapper-sala,#wrapper-tanda,#wrapper-cine,#wrapper-pelicula,#wrapper-precio,#wrapper-cuenta { 
     float: left;
     border: 1px solid #ddd; 
     padding: 30px 40px 20px 40px; 
@@ -68,7 +68,7 @@ form,#wrapper-sala,#wrapper-tanda,#wrapper-cine,#wrapper-pelicula,#wrapper-preci
     box-shadow:0px 0 50px #ccc
 }
 
-input, textarea,select,#guardarSala,#guardarTanda,#guardarPelicula,#guardarPrecio { 		
+input, textarea,select,button { 		
     padding: 8px; 
     margin: 4px 0 20px 0; 
     background: #fff; 
@@ -88,7 +88,7 @@ input:hover, textarea:hover {
     background: #eee; 
 }
 
-input.submit,#guardarSala,#guardarTanda,#guardarPelicula,#guardarPrecio { 	
+input.submit,button { 	
     width: 150px; 
     color: #eee; 
     text-transform: uppercase; 
@@ -106,7 +106,7 @@ input.submit,#guardarSala,#guardarTanda,#guardarPelicula,#guardarPrecio {
     border-radius: 4px;
 }
 
-input.submit:hover,#guardarSala:hover,#guardarTanda:hover,#guardarPelicula:hover,#guardarPrecio:hover { 		
+input.submit:hover,button:hover { 		
     -webkit-box-shadow: 0px 0px 20px #555;
     -moz-box-shadow: 0px 0px 20px #aaa; 
     box-shadow: 0px 0px 20px #555;		

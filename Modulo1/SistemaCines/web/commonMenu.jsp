@@ -28,6 +28,11 @@ Pagina Estatica para incluir menu en todas las demás paginas que tengan este mi
     <body>
         <div id='cssmenu'>
             <ul>
+                <li class='has-sub '><a href='#'><span>Cuentas</span></a>
+                    <ul>
+                        <li><a href='crearCuenta.jsp'><span>Crear Cuenta</span></a></li>
+                    </ul>
+                </li>
                 <li class='has-sub '><a href='#'><span>Cines</span></a>
                     <ul>
                         <li><a href='crearCine.jsp'><span>Crear Cine</span></a></li>

@@ -41,7 +41,7 @@
         + "</silla><silla disponible = \"true\"></silla><silla disponible = \"true\"></silla><silla disponible = \"true\">"
         + "</silla><silla disponible = \"true\"></silla><silla disponible = \"true\"></silla>"
         + "<silla disponible = \"true\"></silla><silla disponible = \"true\"></silla>"
-        + "<silla disponible = \"true\"></silla><silla disponible = \"true\"></silla></fila>";
+        + "<silla disponible = \"true\"></silla><silla disponible = \"true\"></silla></fila></sala>";
 
         if (accion == 1) {
             query = con.prepareStatement("insert into tanda values (default,?,?,?,?,?,?)");
