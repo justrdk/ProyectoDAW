@@ -1,27 +1,19 @@
-/* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-function getCines(){
-    
+
+function getCines(){   
     jQuery.ajax({ 
-        url: 'Controladoras/controladora_agregarSala.jsp', 
+        url: 'Controladoras/getCines.jsp', 
         type: 'GET',
         async: true,
-        data: { 
-            accion : 1
-        },  
         success: function (data)
         {
             if(data.trim() != "none")
             { 
                 var pz = data.trim().split('#');
                 var wizard = new Array();
-                var lata = false;
             
                 for(var i =0;i<pz.length-1;i++)
                 {
-                    wizard = pz[i].split(',');
+                    wizard = pz[i].split('$');
                     jQuery('#cines').append('<option value='+wizard[0]+'></option>');
                     jQuery('#cines option:last').append(wizard[1]);
                 }
@@ -44,7 +36,7 @@ function guardarSala()
             type: 'GET',
             async: true,
             data: { 
-                accion : 2,
+                accion : 1,
                 idCine:idCine,
                 nombreSala:nombreSala
             },  
@@ -52,8 +44,8 @@ function guardarSala()
             {
                 if(data.trim() == "true")
                 {
-                     alert('Sala creada exitosamente!');   
-                     jQuery('#nombreSala').val('');
+                    alert('Sala creada exitosamente!');   
+                    jQuery('#nombreSala').val('');
                 }
             }
         });
