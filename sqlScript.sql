@@ -64,7 +64,7 @@ create database cines;
         );
 		
     CREATE TABLE Precio(
-		idPrecio VARCHAR(10) NOT NULL,
+		idPrecio VARCHAR(30) NOT NULL,
 		precio DECIMAL(5,2) UNSIGNED NOT NULL,
 		PRIMARY KEY (idPrecio)
 	);
@@ -116,5 +116,5 @@ create database cines;
 	
 	INSERT INTO PRECIO VALUES('Adulto', 65.00);
 	INSERT INTO PRECIO VALUES('Nino', 55.00);
-	INSERT INTO PRECIO VALUES('Terc. Edad', 45.00);
+	INSERT INTO PRECIO VALUES('Terc Edad', 45.00);
 	INSERT INTO PRECIO VALUES('Estudiante', 55.00);
