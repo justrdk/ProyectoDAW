@@ -27,6 +27,6 @@
         con.close();
 
     } catch (Exception e) {
-        out.println(e.toString());
+        response.sendRedirect("../agregarPrecios.jsp?insercion=false");
     }
 %>

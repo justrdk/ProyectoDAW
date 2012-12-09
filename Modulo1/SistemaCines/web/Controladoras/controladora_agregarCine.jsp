@@ -37,6 +37,6 @@
         con.close();
 
     } catch (Exception e) {
-        out.println(e.toString());
+        response.sendRedirect("../crearCine.jsp?insercion=false");
     }
 %>

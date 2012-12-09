@@ -16,7 +16,8 @@ function getCines(){
                 for(var i =0;i<pz.length-1;i++)
                 {
                     wizard = pz[i].split('$');
-                    jQuery('#cines').append('<option value='+wizard[0]+'></option>');
+                    jQuery('#cines').append('<option></option>');
+                    jQuery('#cines option:last').attr('value',wizard[0]);
                     jQuery('#cines option:last').append(wizard[1]);
                 }
             }
@@ -66,9 +67,8 @@ function llenarCampos(){
     }
     else
     {   
-        jQuery('.inputs').attr('disabled','true');
+        jQuery('.inputs').val('').attr('disabled','true');
         jQuery('#guardarTanda').attr('disabled','true');
-        jQuery('.inputs').val('');
     }
 }
 
@@ -102,8 +102,7 @@ function editarCine(){
             if(data.trim() == "true"){
                 alert("Cine modificado Exitosamente!");
                 getCines();
-                jQuery('.inputs').val('');
-                jQuery('.inputs').attr('disabled','true');
+                jQuery('.inputs').val('').attr('disabled','true');
                 jQuery('#guardarTanda').attr('disabled','true');
             }
             else

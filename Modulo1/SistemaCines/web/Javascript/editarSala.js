@@ -16,7 +16,8 @@ function getCines(){
                 for(var i =0;i<pz.length-1;i++)
                 {
                     wizard = pz[i].split('$');
-                    jQuery('#cines').append('<option value='+wizard[0]+'></option>');
+                    jQuery('#cines').append('<option></option>');
+                    jQuery('#cines option:last').attr('value',wizard[0]);
                     jQuery('#cines option:last').append(wizard[1]);
                 }
             }
@@ -44,7 +45,8 @@ function getSalas(){
                 for(var i =0;i<pz.length-1;i++)
                 {
                     wizard = pz[i].split('$');
-                    jQuery('#salas').append('<option value='+wizard[0]+'></option>');
+                    jQuery('#salas').append('<option></option>');
+                    jQuery('#salas option:last').attr('value',wizard[0]);
                     jQuery('#salas option:last').append(wizard[1]);
                 }
             }
@@ -86,9 +88,8 @@ function llenarCamposSala(){
     }
     else
     {
-        jQuery('#nombreSala').attr('disabled','true');
+        jQuery('#nombreSala').val('').attr('disabled','true');
         jQuery('#guardarSala').attr('disabled','true');
-        jQuery('.inputs').val('');
     }
 
 }
@@ -118,9 +119,8 @@ function editarSala(){
                 alert("Sala modificada Exitosamente!");
                 getSalas();
                 getCines();
-                jQuery('#nombreSala').val('');
                 jQuery('#cineActual').val('');
-                jQuery('#nombreSala').attr('disabled','true');
+                jQuery('#nombreSala').val('').attr('disabled','true');
                 jQuery('#guardarSala').attr('disabled','true');
             }
             else

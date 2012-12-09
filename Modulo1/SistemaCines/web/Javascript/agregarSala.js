@@ -14,7 +14,8 @@ function getCines(){
                 for(var i =0;i<pz.length-1;i++)
                 {
                     wizard = pz[i].split('$');
-                    jQuery('#cines').append('<option value='+wizard[0]+'></option>');
+                    jQuery('#cines').append('<option></option>');
+                    jQuery('#cines option:last').attr('value',wizard[0]);
                     jQuery('#cines option:last').append(wizard[1]);
                 }
             }

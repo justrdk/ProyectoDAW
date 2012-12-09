@@ -11,6 +11,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css' />
         <LINK href="CSS/formAdministracionCines.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="Javascript/jqueryAPI.js"></script>
+        <script type="text/javascript" src="Javascript/crearCine.js"></script>
         <title>Crear Cine</title>
     </head>
     <body>

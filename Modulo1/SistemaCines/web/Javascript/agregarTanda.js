@@ -15,7 +15,8 @@ function getCines(){
                 for(var i =0;i<pz.length-1;i++)
                 {
                     wizard = pz[i].split('$');
-                    jQuery('#cines').append('<option value='+wizard[0]+'></option>');
+                    jQuery('#cines').append('<option></option>');
+                    jQuery('#cines option:last').attr('value',wizard[0]);
                     jQuery('#cines option:last').append(wizard[1]);
                 }
             }
@@ -48,7 +49,8 @@ function getSalas(){
                     for(var i =0;i<pz.length-1;i++)
                     {
                         wizard = pz[i].split('$');
-                        jQuery('#salas').append('<option value='+wizard[0]+'></option>');
+                        jQuery('#salas').append('<option></option>');
+                        jQuery('#salas option:last').attr('value',wizard[0]);
                         jQuery('#salas option:last').append(wizard[1]);
                     }
                 }
@@ -151,8 +153,7 @@ function seleccionarFila(){
     jQuery('#peliculas td').click(function(){
         var valoresFila = jQuery(this).parent('tr').find('td');
         var id = jQuery(valoresFila[0]);
-        jQuery('#peliculas td').css('color','#555');
-        jQuery('#peliculas td').removeAttr('class','selectedRow');
+        jQuery('#peliculas td').css('color','#555').removeAttr('class','selectedRow');
         jQuery(valoresFila).css('color','red');
         jQuery(id).attr('class','selectedRow');
     });

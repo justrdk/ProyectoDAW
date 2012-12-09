@@ -12,6 +12,7 @@
         <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css' />
         <link href="CSS/formAdministracionCines.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="Javascript/jqueryAPI.js"></script>
+         <script type="text/javascript" src="Javascript/agregarPrecios.js"></script>
         <title>Agregar Precios</title>
     </head>
     <body>
