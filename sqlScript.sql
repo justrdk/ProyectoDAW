@@ -62,18 +62,26 @@ create database cines;
         FOREIGN KEY (idPelicula) REFERENCES Pelicula(idPelicula)
         ON DELETE NO ACTION ON UPDATE CASCADE
         );
+		
+		CREATE TABLE Precio(
+		idPrecio VARCHAR(10) NOT NULL,
+		precio DECIMAL(5,2) UNSIGNED NOT NULL,
+		PRIMARY KEY (idPrecio)
+	);
 
     CREATE TABLE Ticket(
         idTicket INT NOT NULL AUTO_INCREMENT,
         idPelicula INT NOT NULL,
         idTanda INT NOT NULL,
         tipoTicket VARCHAR(15) NOT NULL,
-        precio INT NOT NULL,
+        idPrecio VARCHAR(10) NOT NULL,
         PRIMARY KEY (idTicket), 
         FOREIGN KEY (idPelicula) REFERENCES Pelicula (idPelicula)
-        ON DELETE NO ACTION ON UPDATE CASCADE,       
+        ON DELETE NO ACTION ON UPDATE CASCADE,
         FOREIGN KEY (idTanda) REFERENCES Tanda (idTanda)
-        ON DELETE NO ACTION ON UPDATE CASCADE
+        ON DELETE NO ACTION ON UPDATE CASCADE,
+		FOREIGN KEY (idPrecio) REFERENCES Precio (idPrecio)
+        ON DELETE NO ACTION ON UPDATE NO ACTION
         );
 
     INSERT INTO CUENTA VALUES ('admin',MD5('admin'),'osman',20,'0801199207544');
@@ -100,6 +108,17 @@ create database cines;
     INSERT INTO SALA VALUES(default,1,'Acuario',50);
     INSERT INTO SALA VALUES(default,2,'Sala3',50);
 
-    INSERT INTO TANDA VALUES(default,'2012-12-08','2012/12/08 13:00','2012/12/08 14:00',1,1,'prueba xml');
+<<<<<<< HEAD
+    INSERT INTO TANDA VALUES(default,'2012-12-08','2012-12-08 13:00','2012/12/08 14:00',1,1,'prueba xml');
     INSERT INTO TANDA VALUES(default,'2012-12-09','2012/12/09 14:00','2012/12/08 15:00',2,2,'prueba xml2');
     INSERT INTO TANDA VALUES(default,'2012-12-10','2012/12/09 15:00','2012/12/08 16:00',4,5,'prueba xml3');
+=======
+    INSERT INTO TANDA VALUES(default,'20121208','2012-12-08 13:00','2012/12/08 14:00',1,1,'prueba xml');
+    INSERT INTO TANDA VALUES(default,'20121209','2012-12-09 14:00','2012/12/08 15:00',2,2,'prueba xml2');
+    INSERT INTO TANDA VALUES(default,'20121210','2012-12-09 15:00','2012/12/08 16:00',4,5,'prueba xml3');
+	
+	INSERT INTO PRECIO VALUES('Adulto', 65.00);
+	INSERT INTO PRECIO VALUES('Nino', 55.00);
+	INSERT INTO PRECIO VALUES('Terc. Edad', 45.00);
+	INSERT INTO PRECIO VALUES('Estudiante', 55.00);
+>>>>>>> 188e441f5ffa68ffe3483494a8637c97fdbdacf9
