@@ -31,7 +31,7 @@
                     <input type="text" name="latitudCine" />
                     <label>Longitud: </label>
                     <input type="text" name="longitudCine" />
-                    <input type="submit" value="Submit" name="submit" class="submit" />
+                    <input type="submit" value="Crear" name="submit" class="submit" />
                 </fieldset>
 
                 <fieldset id="user-message">

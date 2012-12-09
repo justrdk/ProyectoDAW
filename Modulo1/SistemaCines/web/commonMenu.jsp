@@ -43,6 +43,7 @@ Pagina Estatica para incluir menu en todas las demás paginas que tengan este mi
                 <li class='has-sub '><a href='#'><span>Películas</span></a>
                     <ul>
                         <li><a href='agregarPelicula.jsp'><span>Agregar Película</span></a></li>
+                        <li><a href='editarPelicula.jsp'><span>Editar Película</span></a></li>
                     </ul>
                 </li>
                 <li class='has-sub '><a href='#'><span>Tandas</span></a>

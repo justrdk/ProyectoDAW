@@ -45,7 +45,7 @@
                     <input type="text" name="formatoPelicula" />
                     <label>Imagen Descriptiva </label>
                     <input type="text" name="imagenPelicula" />
-                    <input type="submit" value="Submit" name="submit" class="submit" />
+                    <input type="submit" value="Agregar" name="submit" class="submit" />
                 </fieldset>
 
                 <fieldset id="user-message">
