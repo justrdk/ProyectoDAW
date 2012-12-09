@@ -51,8 +51,8 @@ create database cines;
     CREATE TABLE Tanda(
         idTanda INT NOT NULL AUTO_INCREMENT,
         fecha DATE NOT NULL,
-        hora_inicial DATETIME NOT NULL,
-        hora_final DATETIME NOT NULL,
+        hora_inicial VARCHAR(25) NOT NULL,
+        hora_final VARCHAR(25) NOT NULL,
         idSala INT NOT NULL,
         idPelicula INT NOT NULL,
         configuracionSillas BLOB NOT NULL,
@@ -63,7 +63,7 @@ create database cines;
         ON DELETE NO ACTION ON UPDATE CASCADE
         );
 		
-		CREATE TABLE Precio(
+    CREATE TABLE Precio(
 		idPrecio VARCHAR(10) NOT NULL,
 		precio DECIMAL(5,2) UNSIGNED NOT NULL,
 		PRIMARY KEY (idPrecio)
@@ -111,9 +111,9 @@ create database cines;
     INSERT INTO TANDA VALUES(default,'2012-12-08','2012-12-08 13:00','2012/12/08 14:00',1,1,'prueba xml');
     INSERT INTO TANDA VALUES(default,'2012-12-09','2012/12/09 14:00','2012/12/08 15:00',2,2,'prueba xml2');
     INSERT INTO TANDA VALUES(default,'2012-12-10','2012/12/09 15:00','2012/12/08 16:00',4,5,'prueba xml3');
-    INSERT INTO TANDA VALUES(default,'20121208','2012-12-08 13:00','2012/12/08 14:00',1,1,'prueba xml');
-    INSERT INTO TANDA VALUES(default,'20121209','2012-12-09 14:00','2012/12/08 15:00',2,2,'prueba xml2');
-    INSERT INTO TANDA VALUES(default,'20121210','2012-12-09 15:00','2012/12/08 16:00',4,5,'prueba xml3');
+    INSERT INTO TANDA VALUES(default,'2012-12-08','2012-12-08 13:00','2012/12/08 14:00',1,1,'prueba xml');
+    INSERT INTO TANDA VALUES(default,'2012-12-09','2012-12-09 14:00','2012/12/08 15:00',2,2,'prueba xml2');
+    INSERT INTO TANDA VALUES(default,'2012-12-10','2012-12-09 15:00','2012/12/08 16:00',4,5,'prueba xml3');
 	
 	INSERT INTO PRECIO VALUES('Adulto', 65.00);
 	INSERT INTO PRECIO VALUES('Nino', 55.00);
