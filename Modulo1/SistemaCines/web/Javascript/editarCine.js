@@ -61,7 +61,7 @@ function llenarCampos(){
     {
         jQuery('.inputs').removeAttr('disabled');
         jQuery('#guardarTanda').removeAttr('disabled');
-        var idCine = jQuery('#cines option:selected').val();
+        var idCine = chuckNorris;
         getDatosCine(idCine);
     }
     else

@@ -9,6 +9,7 @@
         con = DriverManager.getConnection(url, dbuser, dbpw);
         PreparedStatement query = null;
         String salas = "";
+
         int idCine = Integer.parseInt(request.getParameter("idCine"));
 
         query = con.prepareStatement("select idSala,nombre from sala where idCine = ?");
@@ -24,7 +25,7 @@
         } else {
             out.print("none");
         }
-        
+
         query.close();
         con.close();
 

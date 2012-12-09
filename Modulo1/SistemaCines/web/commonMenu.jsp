@@ -37,6 +37,7 @@ Pagina Estatica para incluir menu en todas las demás paginas que tengan este mi
                 <li class='has-sub '><a href='#'><span>Salas</span></a>
                     <ul>
                         <li><a href='agregarSala.jsp'><span>Agregar Sala</span></a></li>
+                        <li><a href='editarSala.jsp'><span>Editar Sala</span></a></li>
                     </ul>
                 </li>
                 <li class='has-sub '><a href='#'><span>Películas</span></a>
