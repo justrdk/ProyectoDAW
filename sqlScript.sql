@@ -73,7 +73,6 @@ create database cines;
         idTicket INT NOT NULL AUTO_INCREMENT,
         idPelicula INT NOT NULL,
         idTanda INT NOT NULL,
-        tipoTicket VARCHAR(15) NOT NULL,
         idPrecio VARCHAR(10) NOT NULL,
         PRIMARY KEY (idTicket), 
         FOREIGN KEY (idPelicula) REFERENCES Pelicula (idPelicula)
