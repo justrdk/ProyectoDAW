@@ -74,6 +74,7 @@ create database cines;
         idPelicula INT NOT NULL,
         idTanda INT NOT NULL,
         idPrecio VARCHAR(10) NOT NULL,
+		fecha DATE NOT NULL,
         PRIMARY KEY (idTicket), 
         FOREIGN KEY (idPelicula) REFERENCES Pelicula (idPelicula)
         ON DELETE NO ACTION ON UPDATE CASCADE,
