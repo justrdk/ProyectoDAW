@@ -92,19 +92,25 @@ function getCantidades()
 
 function comprar()
 {
+    var cuenta = jQuery("#cuenta").val();
+    
     jQuery.ajax(
     {
         url: 'controladora_boletos.jsp',
         type: "post",
         dataType: "json",
         data:{
-            conf:getSillas().join(";"), cant:getCantidades().join(","), idTanda:QS('idTanda')
+            conf:getSillas().join(";"), cant:getCantidades().join(","), idTanda:QS('idTanda'), tar:cuenta
             },
         success: function(data) 
         {
                     
         }	  
     });
+    
+    window.location = "http://localhost:8084/modulo2/";
+    
+    
 }
 
 function QS(name)

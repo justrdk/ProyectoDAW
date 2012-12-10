@@ -11,12 +11,13 @@
 <xs:complexType name="verificarSaldo">
 <xs:sequence>
 <xs:element name="cuenta" type="xs:string" minOccurs="0" />
+<xs:element name="costo" type="xs:float" />
 </xs:sequence>
 </xs:complexType>
 
 <xs:complexType name="verificarSaldoResponse">
 <xs:sequence>
-<xs:element name="return" type="xs:int" minOccurs="0" />
+<xs:element name="return" type="xs:boolean" minOccurs="0" />
 </xs:sequence>
 </xs:complexType>
 

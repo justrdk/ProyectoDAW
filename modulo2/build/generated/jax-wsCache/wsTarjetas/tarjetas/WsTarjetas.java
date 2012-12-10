@@ -41,17 +41,20 @@ public interface WsTarjetas {
 
     /**
      * 
+     * @param costo
      * @param cuenta
      * @return
-     *     returns java.lang.Integer
+     *     returns java.lang.Boolean
      */
     @WebMethod
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "verificarSaldo", targetNamespace = "http://tarjetas/", className = "tarjetas.VerificarSaldo")
     @ResponseWrapper(localName = "verificarSaldoResponse", targetNamespace = "http://tarjetas/", className = "tarjetas.VerificarSaldoResponse")
     @Action(input = "http://tarjetas/wsTarjetas/verificarSaldoRequest", output = "http://tarjetas/wsTarjetas/verificarSaldoResponse")
-    public Integer verificarSaldo(
+    public Boolean verificarSaldo(
         @WebParam(name = "cuenta", targetNamespace = "")
-        String cuenta);
+        String cuenta,
+        @WebParam(name = "costo", targetNamespace = "")
+        float costo);
 
 }

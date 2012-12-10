@@ -182,7 +182,8 @@
                             </tr>
                         </table>
                             
-                        
+                            <input id="cuenta" type="text" placeholder="Ingrese su numero de tarjeta..." />
+                            <button onclick="comprar()">Comprar</button>
 
                     </div>
                 </div>

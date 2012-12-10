@@ -14,8 +14,8 @@ public class DBA {
     private String user;
     private String password;
     private Connection con;
-    //private String url = "jdbc:mysql://localhost:3306/cines";
-    private String url = "jdbc:mysql://192.168.0.13:3306/cines";
+    private String url = "jdbc:mysql://localhost:3306/cines";
+    //private String url = "jdbc:mysql://192.168.0.13:3306/cines";
     
     
     public DBA()
