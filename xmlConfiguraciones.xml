@@ -1,6 +1,6 @@
 <cine nombre="CityMall" ciudad="San Pedro Sula" vision="Ser el mejor cine para el 2014 de centroamerica" mision="Ser los mejores de la galaxia" logo="www.google.com" latitud="21312312" longitud="1321231" ></cine>
 
-<sala cine="CityMall" nombre="SalaXML" capacidad="50"></sala>
+<sala nombre="SalaXML" capacidad="50"></sala>
 
 <pelicula nombre="Taken" duracion="110 minutos" rating="PG-13" sinopsis="Liam Neeson busca y liquida a los hombres que secuestran a su hija" director="Pierre Morel" trailer="youtube.com/taken" year="2008" genero="Accion" idioma="Ingles" formato="Subtitulada,Normal" imagen="http://ia.media-imdb.com/images/M/MV5BMTM4NzQ0OTYyOF5BMl5BanBnXkFtZTcwMDkyNjQyMg@@._V1._SX473_SY701_.jpg"></pelicula>
 
