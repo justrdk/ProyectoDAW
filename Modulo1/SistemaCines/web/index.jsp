@@ -20,7 +20,7 @@
                     <input type ="text" name ="username"/>
                     <label>Contraseña: </label>
                     <input type ="password" name ="password"/>
-                    <input type="submit" value="Submit" name="submit" class="submit" />
+                    <input type="submit" value="Login" name="submit" class="submit" />
                 </form>
             </div>
         </div>
