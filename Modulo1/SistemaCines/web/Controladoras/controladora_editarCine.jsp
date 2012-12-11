@@ -55,7 +55,7 @@
             query.setString(5, logo);
             query.setString(6, latitud);
             query.setString(7, longitud);
-            query.setInt(8,idCine);
+            query.setInt(8, idCine);
 
             int row = query.executeUpdate();
 
@@ -65,6 +65,9 @@
                 out.print("false");
             }
 
+        } else if (accion == 3) 
+        {
+            
         }
         query.close();
         con.close();

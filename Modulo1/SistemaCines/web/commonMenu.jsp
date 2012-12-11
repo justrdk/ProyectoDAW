@@ -65,6 +65,7 @@ Pagina Estatica para incluir menu en todas las demás paginas que tengan este mi
                 <li class='has-sub '><a href='#'><span>Configuracion</span></a>
                     <ul>
                         <li><a href='importarConfig.jsp'><span>Importar</span></a></li>
+                        <li><a href='exportarCine.jsp'><span>Exportar Cine</span></a></li>
                     </ul>
                 </li>
                 <li class='has-sub '><a href='#'><span>Reportes</span></a>
