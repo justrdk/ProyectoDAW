@@ -23,10 +23,17 @@
         <div id="wrapper">           
             <div id="wrapper-cuenta">
                 <fieldset id="user-details">
-                    <h2>Pelicula Más Vista</h2>
+                    <h2>Pelicula(as) Más Vista(as)</h2>
+                    <br/>
+                    <label>Eliga reporte a mostrar</label>
+                    <select id="opciones" onchange="showGraph()">
+                        <option value="0">Eliga reporte a mostrar</option>
+                        <option value="1">Pelicula Más Vista</option>
+                        <option value="2">Asistencias totales/Pelicula</option>
+                    </select>
                 </fieldset>
                 <div id="reporte">
-                    
+
                 </div>
             </div>
 

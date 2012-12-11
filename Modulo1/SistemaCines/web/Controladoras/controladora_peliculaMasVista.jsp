@@ -16,11 +16,11 @@
 
         if (accion == 1) {
 
-            query = con.prepareStatement("select idPelicula, count(idPelicula) from ticket group by idPelicula order by count(idPelicula) desc");
+            query = con.prepareStatement("select T.idPelicula, count(T.idPelicula),P.nombre from ticket as T inner join pelicula as P on T.idPelicula = P.idPelicula group by T.idPelicula order by count(T.idPelicula) desc;");
             rs = query.executeQuery();
 
             while (rs.next()) {
-                datos = rs.getInt(1) + "," + rs.getInt(2);
+                datos = rs.getString(3) + "," + rs.getInt(2);
                 break;
             }
 
@@ -31,18 +31,15 @@
             }
         } else if (accion == 2) {
 
-            int idPelicula = Integer.parseInt(request.getParameter("idPelicula"));
-            query = con.prepareStatement("select nombre from pelicula where idPelicula = ?");
-            query.setInt(1, idPelicula);
+            query = con.prepareStatement("select T.idPelicula, count(T.idPelicula),P.nombre from ticket as T inner join pelicula as P on T.idPelicula = P.idPelicula group by T.idPelicula order by count(T.idPelicula) desc;");
             rs = query.executeQuery();
 
-
             while (rs.next()) {
-                nombre = rs.getString(1);
+                datos += rs.getString(3) + "," + rs.getInt(2)+"$";
             }
 
-            if (nombre.length() > 0) {
-                out.print(nombre);
+            if (datos.length() > 0) {
+                out.print(datos);
             } else {
                 out.print("none");
             }
