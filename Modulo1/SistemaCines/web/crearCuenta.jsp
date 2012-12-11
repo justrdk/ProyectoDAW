@@ -13,7 +13,6 @@
         <link href="CSS/formAdministracionCines.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="Javascript/jqueryAPI.js"></script>
         <script type="text/javascript" src="Javascript/crearCuenta.js"></script>
-        <link href="CSS/formAdministracionCines.css" rel="stylesheet" type="text/css">
         <title>Crear Cuenta</title>
     </head>
     <body>

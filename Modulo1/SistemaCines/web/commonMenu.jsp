@@ -62,9 +62,14 @@ Pagina Estatica para incluir menu en todas las demás paginas que tengan este mi
                          <li><a href='editarPrecios.jsp'><span>Editar Precio Entrada</span></a></li>
                     </ul>
                 </li>
+                <li class='has-sub '><a href='#'><span>Configuracion</span></a>
+                    <ul>
+                        <li><a href='importarConfig.jsp'><span>Importar</span></a></li>
+                    </ul>
+                </li>
                 <li class='has-sub '><a href='#'><span>Reportes</span></a>
                     <ul>
-                        <li><a href='#'><span>Ingresos Netos/Cine</span></a></li>
+                        <li><a href='ingresosNetosCine.jsp'><span>Ingresos Netos/Cine</span></a></li>
                         <li><a href='#'><span>Pelicula Más Vista</span></a></li>
                     </ul>
                 </li>
