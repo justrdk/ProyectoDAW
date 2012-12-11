@@ -69,7 +69,7 @@ Pagina Estatica para incluir menu en todas las demás paginas que tengan este mi
                 </li>
                 <li class='has-sub '><a href='#'><span>Reportes</span></a>
                     <ul>
-                        <li><a href='ingresosNetosCine.jsp'><span>Ingresos Netos/Cine</span></a></li>
+                        <li><a href='ventasPorSala.jsp'><span>Ventas/Sala</span></a></li>
                         <li><a href='#'><span>Pelicula Más Vista</span></a></li>
                     </ul>
                 </li>
