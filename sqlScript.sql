@@ -108,12 +108,678 @@ create database cines;
     INSERT INTO SALA VALUES(default,1,'Acuario',50);
     INSERT INTO SALA VALUES(default,2,'Sala3',50);
 
-    INSERT INTO TANDA VALUES(default,'2012-12-08','2012-12-08 13:00','2012-12-08 14:00',1,1,'prueba xml');
-    INSERT INTO TANDA VALUES(default,'2012-12-09','2012-12-09 14:00','2012-12-08 15:00',2,2,'prueba xml2');
-    INSERT INTO TANDA VALUES(default,'2012-12-10','2012-12-09 15:00','2012-12-08 16:00',4,5,'prueba xml3');
-    INSERT INTO TANDA VALUES(default,'2012-12-08','2012-12-08 13:00','2012-12-08 14:00',1,1,'prueba xml');
-    INSERT INTO TANDA VALUES(default,'2012-12-09','2012-12-09 14:00','2012-12-08 15:00',2,2,'prueba xml2');
-    INSERT INTO TANDA VALUES(default,'2012-12-10','2012-12-09 15:00','2012-12-08 16:00',4,5,'prueba xml3');
+     INSERT INTO TANDA VALUES(default,'2012-12-08','2012-12-08 13:00','2012-12-08 14:00',1,1,'<sala>
+    <fila  Columna="A">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>=
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="B">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="C">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="D">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="E">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+</sala>');
+    INSERT INTO TANDA VALUES(default,'2012-12-09','2012-12-09 14:00','2012-12-08 15:00',2,2,'<sala>
+    <fila  Columna="A">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>=
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="B">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="C">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="D">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="E">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+</sala>');
+    INSERT INTO TANDA VALUES(default,'2012-12-10','2012-12-09 15:00','2012-12-08 16:00',4,5,'<sala>
+    <fila  Columna="A">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>=
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="B">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="C">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="D">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="E">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+</sala>');
+    INSERT INTO TANDA VALUES(default,'2012-12-08','2012-12-08 13:00','2012-12-08 14:00',1,1,'<sala>
+    <fila  Columna="A">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>=
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="B">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="C">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="D">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="E">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+</sala>');
+    INSERT INTO TANDA VALUES(default,'2012-12-09','2012-12-09 14:00','2012-12-08 15:00',2,2,'<sala>
+    <fila  Columna="A">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>=
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="B">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="C">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="D">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="E">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+</sala>');
+    INSERT INTO TANDA VALUES(default,'2012-12-10','2012-12-09 15:00','2012-12-08 16:00',4,5,'<sala>
+    <fila  Columna="A">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>=
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="B">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="C">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="D">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+    <fila  Columna="E">
+        <silla  disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+        <silla disponible = "true">
+        </silla>
+    </fila>
+</sala>');
 	
 	INSERT INTO PRECIO VALUES('Adulto', 65.00);
 	INSERT INTO PRECIO VALUES('Nino', 55.00);
@@ -125,31 +791,31 @@ create database cines;
 	INSERT INTO ticket VALUES(default,1,1,'Adulto', curdate());
 	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
 	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
+	INSERT INTO ticket VALUES(default,1,2,'Nino', curdate());
+	INSERT INTO ticket VALUES(default,1,2,'Nino', curdate());
 	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
 	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
 	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
+	INSERT INTO ticket VALUES(default,1,2,'Nino', curdate());
 	INSERT INTO ticket VALUES(default,1,1,'Adulto', curdate());
 	INSERT INTO ticket VALUES(default,1,1,'Adulto', curdate());
 	INSERT INTO ticket VALUES(default,1,1,'Estudiante', curdate());
+	INSERT INTO ticket VALUES(default,1,2,'Adulto', curdate());
 	INSERT INTO ticket VALUES(default,1,1,'Adulto', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Adulto', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Adulto', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Adulto', curdate());
+	INSERT INTO ticket VALUES(default,2,1,'Nino', curdate());
+	INSERT INTO ticket VALUES(default,3,1,'Nino', curdate());
+	INSERT INTO ticket VALUES(default,4,1,'Nino', curdate());
+	INSERT INTO ticket VALUES(default,5,2,'Nino', curdate());
+	INSERT INTO ticket VALUES(default,2,1,'Nino', curdate());
+	INSERT INTO ticket VALUES(default,2,1,'Nino', curdate());
+	INSERT INTO ticket VALUES(default,2,1,'Nino', curdate());
+	INSERT INTO ticket VALUES(default,4,1,'Nino', curdate());
+	INSERT INTO ticket VALUES(default,5,1,'Adulto', curdate());
+	INSERT INTO ticket VALUES(default,5,1,'Adulto', curdate());
 	INSERT INTO ticket VALUES(default,1,1,'Estudiante', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Adulto', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Adulto', curdate());
-	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
+	INSERT INTO ticket VALUES(default,2,1,'Adulto', curdate());
+	INSERT INTO ticket VALUES(default,5,1,'Adulto', curdate());
+	INSERT INTO ticket VALUES(default,5,1,'Nino', curdate());
 	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
 	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
 	INSERT INTO ticket VALUES(default,1,1,'Nino', curdate());
