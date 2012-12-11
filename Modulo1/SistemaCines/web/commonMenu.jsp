@@ -70,7 +70,7 @@ Pagina Estatica para incluir menu en todas las demás paginas que tengan este mi
                 <li class='has-sub '><a href='#'><span>Reportes</span></a>
                     <ul>
                         <li><a href='ventasPorSala.jsp'><span>Ventas/Sala</span></a></li>
-                        <li><a href='#'><span>Pelicula Más Vista</span></a></li>
+                        <li><a href='peliculaMasVista.jsp'><span>Película Más Vista</span></a></li>
                     </ul>
                 </li>
             </ul>

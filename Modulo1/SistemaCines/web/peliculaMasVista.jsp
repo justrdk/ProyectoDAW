@@ -12,7 +12,7 @@
         <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css' />
         <link href="CSS/formAdministracionCines.css" rel="stylesheet" type="text/css">
         <script src="Javascript/jqueryAPI.js"></script>
-        <script src="Javascript/ventasPorSala.js"></script>
+        <script src="Javascript/peliculaMasVista.js"></script>
         <script src="Javascript/highcharts.js"></script>
         <script src="Javascript/modules/exporting.js"></script>
         <title>Reporte Ingresos</title>
@@ -23,18 +23,10 @@
         <div id="wrapper">           
             <div id="wrapper-cuenta">
                 <fieldset id="user-details">
-                    <h2>Ventas por Sala</h2>
-                    <label>Escoger Cine</label>
-                    <select name="escogerCine" id="cines" onchange="getSalas()">
-                        <option value="default">Escoger Cine</option>
-                    </select>
-                    <br/>
-                    <label>Escoger Sala</label>
-                    <select name="escogerSala" id="salas" onchange="getGraphData()">
-                    </select>
+                    <h2>Pelicula Más Vista</h2>
                 </fieldset>
                 <div id="reporte">
-
+                    
                 </div>
             </div>
 

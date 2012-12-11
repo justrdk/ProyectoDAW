@@ -78,7 +78,7 @@ function prepareHighChart(cantidad,nombreSala){
             text: 'Total Tickets Vendidos'
         },
         xAxis: {
-            categories: []
+            categories: ["Tickets"]
         },
         yAxis: {
             min: 0,
@@ -105,7 +105,7 @@ function prepareHighChart(cantidad,nombreSala){
         tooltip: {
             formatter: function() {
                 return ''+
-                this.x +': '+ this.y +' mm';
+                this.x +': '+ this.y +' unidades vendidas';
             }
         },
         series: [{
